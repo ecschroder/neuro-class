@@ -1,0 +1,100 @@
+% QUESTIONS
+% Does Octave use while loops?
+% How do you add an element to a list in Octave?
+
+
+
+% Set an index i,j on stim,rho ?
+
+% define an empty list
+
+
+% Is there a spike?
+
+    % if rho = 1, then move marker to this spot
+    % if rho = 0, then move marker to next spot, repeat
+
+% get the average for the last 300 ms
+
+    % average = average of the stim's
+        %   [value at marker, value at marker-1, ..., value at marker-150]
+
+% put that number in a list
+
+    %
+
+% move on to next element
+
+    % if there are more elements in the list, advance marker, repeat loop
+    % end when there are no more elements in the list
+
+% finally, take the average of the list
+
+    %
+
+% output the answer
+
+
+
+
+
+
+
+THIS ISN'T WRONG, IT JUST DOES SOMETHING COMPLETELY DIFFERENT THAN WHAT WE WANT
+
+
+% initialize an index, i
+
+i = 1;
+
+% set up a loop (while i is in range)
+
+while i <= num_spikes(1)
+
+    % find the first (or next) spike. Note that time as t
+
+    t = spike_time(i);
+
+    % find the spike-triggered average leading up to t
+    % add that number to the list, sta
+
+    sta(i) = mean(stim(t-150:t));
+
+    % move to the next spike
+
+    i = i + 1;
+
+
+% end for loop
+
+endwhile
+
+
+% finally, find the average of sta
+
+
+
+
+
+
+
+
+
+
+
+            %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+            % DELETE?
+
+            y = spike_time(i);
+
+            data_points(i,j) = stim(y);
+
+            NEXT y =
+
+            %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
