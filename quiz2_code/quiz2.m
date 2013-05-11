@@ -9,10 +9,10 @@ sta = compute_sta(stim, rho, num_timesteps);
 
 time = -sampling_period*(num_timesteps-1):sampling_period:0; % in ms
 
+
 figure(1);
 % original line below
-% plot(time, sta);
-plot(time(1:150), sta(1:150));
+plot(time, sta);
 xlabel('Time (ms)');
 ylabel('Stimulus');
 title('Spike-Triggered Average');
